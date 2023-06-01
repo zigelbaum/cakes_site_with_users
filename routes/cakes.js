@@ -67,3 +67,5 @@ router.delete("/:delId", auth, async (req, res) => {
         res.status(500).json({ msg: "there error try again later", err })
     }
 })
+
+module.exports = router;

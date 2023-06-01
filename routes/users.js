@@ -37,7 +37,7 @@ router.post("/", async(req,res) => {
     user.password = await bcrypt.hash(user.password, 10);
 
     await user.save();
-    user.password = "***";
+    user.password = "*****";
     res.status(201).json(user);
   }
   catch(err){
